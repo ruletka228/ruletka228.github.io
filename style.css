@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #202020;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 30px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.wheel-container {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.pointer {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  color: yellow;
+  pointer-events: none;
+}
+
+canvas {
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  background-color: white;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+#history {
+  list-style: none;
+  padding-left: 10px;
+}
+
+#history li {
+  padding: 4px 0;
+  border-bottom: 1px dotted #555;
+  font-size: 14px;
+}
+
+/* PWA install banner hidden fix (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

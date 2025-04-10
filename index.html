@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎡 Колесо фортуны</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎡 Колесо фортуны</h1>
+
+    <textarea id="input" rows="4">🍕,🍔,🌭,🍟,🍗,🥗</textarea>
+    <button onclick="renderWheel()">Обновить цвет</button>
+
+    <div class="wheel-container">
+      <canvas id="wheel" width="500" height="500"></canvas>
+      <div class="pointer">▼</div>
+    </div>
+
+    <button onclick="spinWheel()">Крутить!</button>
+    <div id="result"></div>
+
+    <div style="margin-top: 20px; text-align: left;">
+      <h3>📋 История результатов:</h3>
+      <ul id="history" style="max-height: 150px; overflow-y: auto;"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
